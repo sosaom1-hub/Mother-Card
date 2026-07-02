@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday My Mommy</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@500;700&display=swap');
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 40px 16px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(160deg, #fdf6ec 0%, #eaf2f8 50%, #f7e9f0 100%);
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .card {
+    position: relative;
+    width: 420px;
+    max-width: 100%;
+    background: #fffdf9;
+    border-radius: 28px;
+    padding: 22px 22px 28px;
+    box-shadow: 0 20px 50px rgba(120, 100, 90, 0.25);
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 28px;
+    border: 3px dashed #f3c9d4;
+    margin: 8px;
+    pointer-events: none;
+  }
+
+  .photo-wrap {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+
+  .photo-wrap img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .title-banner {
+    position: relative;
+    margin: -30px auto 0;
+    width: fit-content;
+    transform: rotate(-2deg);
+    background: rgba(255, 255, 255, 0.96);
+    padding: 10px 22px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    text-align: center;
+    z-index: 2;
+  }
+
+  .title-banner .line1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 27px;
+    color: #e0668a;
+    line-height: 1;
+  }
+
+  .title-banner .line2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    color: #7fa7c9;
+    margin-top: 2px;
+  }
+
+  .sub {
+    margin-top: 16px;
+    text-align: center;
+    color: #8a7d6f;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+  }
+
+  .emoji-row {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 6px;
+  }
+
+  /* decorative floating elements */
+  .deco {
+    position: absolute;
+    font-size: 26px;
+    filter: drop-shadow(0 3px 4px rgba(0,0,0,0.15));
+    animation: float 4s ease-in-out infinite;
+  }
+  .deco.d1 { top: 30px; left: 18px; font-size: 30px; animation-delay: 0s; }
+  .deco.d2 { top: 60px; right: 20px; font-size: 24px; animation-delay: .6s; }
+  .deco.d3 { bottom: 130px; left: 10px; font-size: 22px; animation-delay: 1.1s; }
+  .deco.d4 { bottom: 120px; right: 14px; font-size: 26px; animation-delay: 1.6s; }
+  .deco.d5 { top: 46%; left: 6px; font-size: 20px; animation-delay: .3s; }
+  .deco.d6 { top: 40%; right: 4px; font-size: 20px; animation-delay: 2s; }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(6deg); }
+  }
+
+  .confetti {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    opacity: 0.85;
+  }
+
+  .stripe-tape {
+    position: absolute;
+    width: 90px;
+    height: 26px;
+    background: repeating-linear-gradient(45deg, #cfe3f2, #cfe3f2 6px, #fffdf9 6px, #fffdf9 12px);
+    opacity: 0.9;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  }
+  .tape-left { top: -6px; left: -18px; transform: rotate(-40deg); }
+  .tape-right { top: -6px; right: -18px; transform: rotate(40deg); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stripe-tape tape-left"></div>
+    <div class="stripe-tape tape-right"></div>
+
+    <span class="deco d1">🎈</span>
+    <span class="deco d2">🎀</span>
+    <span class="deco d3">🌸</span>
+    <span class="deco d4">✨</span>
+    <span class="deco d5">🎂</span>
+    <span class="deco d6">💐</span>
+
+    <div class="photo-wrap">
+      <img src="mom_photo.jpeg" alt="Mom and daughter">
+    </div>
+
+    <div class="title-banner">
+      <div class="line1">Happy Birthday</div>
+      <div class="line2">My Mommy :)</div>
+    </div>
+
+    <div class="sub">ขอให้แม่มีความสุข สุขภาพแข็งแรง ยิ้มสวยแบบนี้ทุกวันเลยนะครับ</div>
+    <div class="emoji-row">🎉 🌷 💗 🎁 🌟</div>
+  </div>
+</body>
+</html>
